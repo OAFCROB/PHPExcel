@@ -42,7 +42,7 @@ class PHPExcel_Style_NumberFormat extends PHPExcel_Style_Supervisor implements P
 
     const FORMAT_DATE_YYYYMMDD2          = 'yyyy-mm-dd';
     const FORMAT_DATE_YYYYMMDD           = 'yy-mm-dd';
-    const FORMAT_DATE_DDMMYYYY           = 'dd/mm/yy';
+    const FORMAT_DATE_DDMMYYYY           = 'dd/mm/yyyy';
     const FORMAT_DATE_DMYSLASH           = 'd/m/y';
     const FORMAT_DATE_DMYMINUS           = 'd-m-y';
     const FORMAT_DATE_DMMINUS            = 'd-m';
@@ -264,7 +264,7 @@ class PHPExcel_Style_NumberFormat extends PHPExcel_Style_Supervisor implements P
         //      40: "#,##0.00_);[Red](#,##0.00)"
         //      47: "mm:ss.0"
         //      KOR fmt 55: "yyyy/mm/dd"
- 
+
         // Built-in format codes
         if (is_null(self::$builtInFormats)) {
             self::$builtInFormats = array();
@@ -281,7 +281,7 @@ class PHPExcel_Style_NumberFormat extends PHPExcel_Style_Supervisor implements P
             self::$builtInFormats[11] = '0.00E+00';
             self::$builtInFormats[12] = '# ?/?';
             self::$builtInFormats[13] = '# ??/??';
-            self::$builtInFormats[14] = 'm/d/yyyy';                     // Despite ECMA 'mm-dd-yy';
+            self::$builtInFormats[14] = 'dd/mm/yyyy';                     // Despite ECMA 'mm-dd-yy';
             self::$builtInFormats[15] = 'd-mmm-yy';
             self::$builtInFormats[16] = 'd-mmm';
             self::$builtInFormats[17] = 'mmm-yy';
